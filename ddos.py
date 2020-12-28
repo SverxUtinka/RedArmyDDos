@@ -15,11 +15,10 @@ adres = str(input('link:'))
 def send():
 	while True:
 		requests.get(adres, headers=headers)
-		print('Белая армия чёрный народ!')
+		print('Красная армия всех сильней!')
 		requests.post(adres, headers=headers)
-		print('Снова готовят нам царский трон!')
+		print('Красная армия всех сильней!')
 		requests.head(adres, headers=headers)
-		print('От тайги до британских морей!')
 		print('Красная армия всех сильней!')
 
 if __name__ == '__main__':
